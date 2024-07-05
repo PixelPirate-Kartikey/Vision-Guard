@@ -16,6 +16,9 @@ VisionGuard is a deep learning-based system to detect diabetic retinopathy from 
 
 Diabetic retinopathy is a common complication of diabetes and a leading cause of blindness. VisionGuard utilizes deep learning to automate the detection process, aiding healthcare professionals in early diagnosis and treatment planning.
 
+![image](https://github.com/PixelPirate-Kartikey/Vision-Guard/assets/104156929/aca069d0-1df8-462c-b572-7ff6134f1a72)
+
+
 ## Features
 
 - **Automated Detection**: Detects diabetic retinopathy from retinal images.
