@@ -47,13 +47,14 @@ Vision-Guard employs a Convolutional neural network (CNN) architecture designed 
            Linear-10                   [-1, 50]           5,050
            Linear-11                    [-1, 2]             102
 ----------------------------------------------------------------
-Total params: 1,470,020
-Trainable params: 1,470,020
-Non-trainable params: 0
-Input size (MB): 0.74
-Forward/Backward pass size (MB): 14.75
-Params size (MB): 5.61
-Estimated Total Size (MB): 21.10
+Total params: 1,470,020  
+Trainable params: 1,470,020  
+Non-trainable params: 0  
+Input size (MB): 0.74  
+Forward/Backward pass size (MB): 14.75  
+Params size (MB): 5.61  
+Estimated Total Size (MB): 21.10  
+
 
 ## Training
 Train VisionGuard using the provided dataset and adjust hyperparameters such as learning rate, batch size, and optimizer settings to achieve optimal performance.
