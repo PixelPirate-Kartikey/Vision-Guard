@@ -11,9 +11,6 @@ VisionGuard is a deep learning-based system to detect diabetic retinopathy from 
 5. [Training](#training)
 6. [Evaluation](#evaluation)
 7. [Results](#results)
-8. [Contributing](#contributing)
-9. [License](#license)
-10. [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
