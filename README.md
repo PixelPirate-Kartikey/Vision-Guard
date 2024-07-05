@@ -1,4 +1,4 @@
-# Vision-Guard: Diabetic Retinopathy Detection System
+# Vision-Guard: Diabetic Retinopathy Detection System 
 
 VisionGuard is a deep learning-based system to detect diabetic retinopathy from retinal images. This project aims to provide accurate and efficient detection of diabetic retinopathy, leveraging convolutional neural networks (CNNs) and modern computer vision techniques.
 
@@ -32,6 +32,29 @@ The dataset used for training VisionGuard should include annotated retinal image
 ## Architecture
 Vision-Guard employs a Convolutional neural network (CNN) architecture designed to extract features from the retinal images and classify them into diabetic retinopathy severity levels.
 
+-----------------------------------------------------------------
+        Layer (type)               Output Shape           Param
+-----------------------------------------------------------------
+            Conv2d-1          [-1, 8, 255, 255]             224
+       BatchNorm2d-2          [-1, 8, 255, 255]              16
+            Conv2d-3         [-1, 16, 127, 127]           1,168
+       BatchNorm2d-4         [-1, 16, 127, 127]              32
+            Conv2d-5           [-1, 32, 63, 63]           4,640
+       BatchNorm2d-6           [-1, 32, 63, 63]              64
+            Conv2d-7           [-1, 64, 31, 31]          18,496
+       BatchNorm2d-8           [-1, 64, 31, 31]             128
+            Linear-9                  [-1, 100]       1,440,100
+           Linear-10                   [-1, 50]           5,050
+           Linear-11                    [-1, 2]             102
+----------------------------------------------------------------
+Total params: 1,470,020
+Trainable params: 1,470,020
+Non-trainable params: 0
+Input size (MB): 0.74
+Forward/Backward pass size (MB): 14.75
+Params size (MB): 5.61
+Estimated Total Size (MB): 21.10
+
 ## Training
 Train VisionGuard using the provided dataset and adjust hyperparameters such as learning rate, batch size, and optimizer settings to achieve optimal performance.
 
@@ -40,17 +63,63 @@ Evaluate VisionGuard using metrics such as accuracy, precision, recall, and F1-s
 
 ## Results
 ### Training Set
-<img width="470" alt="image" src="https://github.com/PixelPirate-Kartikey/Vision-Guard/assets/104156929/b6c95633-8196-4831-bb4d-c1ed41387210">
+                precision   recall  f1-score   support
+
+         0.0       0.97      0.96      0.96      1050
+         1.0       0.96      0.97      0.96      1026
+
+    accuracy                           0.96      2076
+   macro avg       0.96      0.96      0.96      2076
+weighted avg       0.96      0.96      0.96      2076
+ 
+
+
+Accuracy: 0.9639
+
+Confusion Matrix:
+ [[1007   43]
+ [  32  994]]
+
 
 ### Validation Set
-<img width="445" alt="image" src="https://github.com/PixelPirate-Kartikey/Vision-Guard/assets/104156929/ad568310-8bf9-4283-9a47-f70cd351ae65">
+                precision  recall   f1-score   support
+
+         0.0       0.97      0.94      0.95       245
+         1.0       0.95      0.97      0.96       286
+
+    accuracy                           0.96       531
+   macro avg       0.96      0.96      0.96       531
+weighted avg       0.96      0.96      0.96       531
+ 
+
+
+Accuracy: 0.9586
+
+Confusion Matrix:
+ [[231  14]
+ [  8 278]]
 
 ### Testing Set
-<img width="380" alt="image" src="https://github.com/PixelPirate-Kartikey/Vision-Guard/assets/104156929/db3076e4-47ae-4d0a-aaae-dea0b18aa899">
+                precision    recall  f1-score   support
+
+         0.0       0.97      0.92      0.95       113
+         1.0       0.93      0.97      0.95       118
+
+    accuracy                           0.95       231
+   macro avg       0.95      0.95      0.95       231
+weighted avg       0.95      0.95      0.95       231
+ 
+
+
+Accuracy: 0.9481
+
+Confusion Matrix:
+ [[104   9]
+ [  3 115]]
 
 ## Acknowledgement
-- Dataset:
-- 
+- Dataset: https://www.kaggle.com/datasets/pkdarabi/diagnosis-of-diabetic-retinopathy
+- https://www.kaggle.com/code/farheenshaukat/diagnosis-of-diabetic-retinopathy/notebook
 
 
 
