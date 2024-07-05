@@ -26,18 +26,7 @@ Diabetic retinopathy is a common complication of diabetes and a leading cause of
 The dataset used for training VisionGuard should include annotated retinal images. Ensure the dataset is properly preprocessed and split into training, validation, and test sets.
 
 ## Architecture
-VisionGuard employs a convolutional neural network (CNN) architecture designed to extract features from retinal images and classify them into diabetic retinopathy severity levels.
-For example, the CNN architecture used in VisionGuard:
-Layer (type)                 Output Shape              Param #
-===============================================================
-Conv2d-1                      [-1, 8, 253, 253]         224
-...
-Linear-1                      [-1, 100]                 327,691
-Linear-2                      [-1, 2]                   202
-===============================================================
-Total params: 1,049,505
-Trainable params: 1,049,505
-Non-trainable params: 0
+Vision-Guard employs a Convolutional neural network (CNN) architecture designed to extract features from the retinal images and classify them into diabetic retinopathy severity levels.
 
 ## Training
 Train VisionGuard using the provided dataset and adjust hyperparameters such as learning rate, batch size, and optimizer settings to achieve optimal performance.
