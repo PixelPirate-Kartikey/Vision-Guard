@@ -61,6 +61,8 @@ Train VisionGuard using the provided dataset and adjust hyperparameters such as 
 
 ## Evaluation
 Evaluate VisionGuard using metrics such as accuracy, precision, recall, and F1-score on the test set to assess its performance in detecting diabetic retinopathy.
+![image](https://github.com/PixelPirate-Kartikey/Vision-Guard/assets/104156929/31b95346-9227-48e1-8ceb-6e8ae9e81f82)
+
 
 ## Results
 ### Training Set
