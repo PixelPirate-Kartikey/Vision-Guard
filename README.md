@@ -7,7 +7,7 @@ VisionGuard is a deep learning-based system to detect diabetic retinopathy from 
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Dataset](#dataset)
-4. [Model Architecture](#model-architecture)
+4. [Architecture](#architecture)
 5. [Training](#training)
 6. [Evaluation](#evaluation)
 7. [Results](#results)
@@ -25,7 +25,7 @@ Diabetic retinopathy is a common complication of diabetes and a leading cause of
 ## Dataset
 The dataset used for training VisionGuard should include annotated retinal images. Ensure the dataset is properly preprocessed and split into training, validation, and test sets.
 
-## Model Architecture
+## Architecture
 VisionGuard employs a convolutional neural network (CNN) architecture designed to extract features from retinal images and classify them into diabetic retinopathy severity levels.
 For example, the CNN architecture used in VisionGuard:
 Layer (type)                 Output Shape              Param #
